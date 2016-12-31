@@ -1,0 +1,30 @@
+
+<% if user_signed_in? %>
+
+<p>
+	<ul>
+		<li>Mon espace</li>
+		<li>Créer une VM</li>
+	</ul>
+</p>
+
+<% else %>
+
+
+	 <p>
+	 <%= link_to "Espace Administrateur", new_admin_user_session_path %> 
+	 <%= link_to "Connexion", new_user_session_path %> 
+	 <%= link_to "Inscription", new_user_registration_path %> 
+	 </p>
+	 
+	 
+<% end %>
+
+
+
+
+
+
+
+
+
